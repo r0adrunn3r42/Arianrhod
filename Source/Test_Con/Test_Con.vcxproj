@@ -45,8 +45,6 @@
     <LinkIncremental>false</LinkIncremental>
     <TargetName>Test_Con</TargetName>
     <TargetExt>.exe</TargetExt>
-    <IncludePath>$(VC_IncludePath);$(IncludePath)</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x86);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -65,7 +63,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
-      <AdditionalIncludeDirectories>D:\Desktop\xx\llvm\tools\lldb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Desktop\xx\llvm\tools\lldb\include;D:\Dev\Source\Project\iTunesHelper\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_AFXDLL=1;USE_NT_VER=1;WIN32;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>.\Release\Test_Con.pch</PrecompiledHeaderOutputFile>
@@ -146,6 +144,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Project\iTunesHelper\darmu\armv7-tbl.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\armv7.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\darm-tbl.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\darm.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\darmu.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\insns.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\thumb-tbl.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\thumb.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\thumb2-decoder.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\thumb2-tbl.c" />
+    <ClCompile Include="..\Project\iTunesHelper\darmu\thumb2.c" />
     <ClCompile Include="Test_Con.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Level3</WarningLevel>
@@ -153,6 +162,16 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </AdditionalOptions>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Project\iTunesHelper\darmu\armv7-tbl.h" />
+    <ClInclude Include="..\Project\iTunesHelper\darmu\darm-internal.h" />
+    <ClInclude Include="..\Project\iTunesHelper\darmu\darm-tbl.h" />
+    <ClInclude Include="..\Project\iTunesHelper\darmu\darm.h" />
+    <ClInclude Include="..\Project\iTunesHelper\darmu\darmu.h" />
+    <ClInclude Include="..\Project\iTunesHelper\darmu\thumb-tbl.h" />
+    <ClInclude Include="..\Project\iTunesHelper\darmu\thumb2-tbl.h" />
+    <ClInclude Include="..\Project\iTunesHelper\darmu\thumb2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

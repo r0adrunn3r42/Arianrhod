@@ -168,6 +168,35 @@ String GetLibraryID()
 
 ForceInline VOID main2(LONG_PTR argc, PWSTR *argv)
 {
+    return;
+
+/*
+    darmu_t d;
+    BYTE stack[0x1000];
+    NtFileMemory dyld_cache;
+    BYTE buf[] = { 0xAA, 0xD6, 0xD0, 0xBF, 0x36, 0x6E, 0xD1, 0xF9, 0xFA, 0x9A, 0xD6, 0x06, 0xD7, 0xFC, 0x08, 0x83, 0x24, 0x60, 0x68, 0xE6 };
+
+    dyld_cache.Open(L"D:\\Desktop\\dyld_shared_cache\\dyld_shared_cache_armv7s_se_ios_933");
+
+    memset(stack, -1, sizeof(stack));
+    darmu_init(&d, stack, sizeof(stack));
+    darmu_mapping_add(&d, (PBYTE)dyld_cache.GetBuffer(), dyld_cache, 0x20000000);
+
+    for (int i = darm_reg_t::r0; i != darm_reg_t::r10 + 1; i++)
+        darmu_register_set(&d, i, 0xFFFF0000 + i);
+
+    darmu_register_set(&d, darm_reg_t::LR, 0xFFFFFFFF); // 0x3F33ED0);
+    darmu_register_set(&d, darm_reg_t::PC, 0x23F33ED0 | 1); // 0x3F33ED0);
+    darmu_register_set(&d, darm_reg_t::r0, 2);
+    darmu_register_set(&d, darm_reg_t::r1, (ULONG_PTR)buf);
+
+    while (d.regs[darm_reg_t::PC] != 0xFFFFFFFF)
+    {
+        darmu_single_step(&d);
+    }
+*/
+    return;
+
     NTSTATUS Status;
 
     ml::MlInitialize();
