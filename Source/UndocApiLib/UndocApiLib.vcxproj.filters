@@ -22,6 +22,9 @@
     <Filter Include="fms">
       <UniqueIdentifier>{87bbb099-ddde-42ce-8855-2168bcf8d425}</UniqueIdentifier>
     </Filter>
+    <Filter Include="unicorn">
+      <UniqueIdentifier>{36bcd5ac-6cc8-4afa-9eee-7bab68a40b21}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="undoc_apphelp.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="undoc_fms.cpp">
       <Filter>fms</Filter>
+    </ClCompile>
+    <ClCompile Include="unicorn.cpp">
+      <Filter>unicorn</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +75,9 @@
     </None>
     <None Include="undoc_fms.def">
       <Filter>fms</Filter>
+    </None>
+    <None Include="unicorn.def">
+      <Filter>unicorn</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UndocApiLib", "UndocApiLib.vcxproj", "{FD66DCDA-1F24-49F1-A599-D95790F23522}"
 EndProject
@@ -17,6 +17,8 @@ Global
 		ntdll|x64 = ntdll|x64
 		ucidec|Win32 = ucidec|Win32
 		ucidec|x64 = ucidec|x64
+		unicorn|Win32 = unicorn|Win32
+		unicorn|x64 = unicorn|x64
 		ws2_32|Win32 = ws2_32|Win32
 		ws2_32|x64 = ws2_32|x64
 		zlib|Win32 = zlib|Win32
@@ -43,6 +45,10 @@ Global
 		{FD66DCDA-1F24-49F1-A599-D95790F23522}.ucidec|Win32.Build.0 = ucidec|Win32
 		{FD66DCDA-1F24-49F1-A599-D95790F23522}.ucidec|x64.ActiveCfg = ucidec|x64
 		{FD66DCDA-1F24-49F1-A599-D95790F23522}.ucidec|x64.Build.0 = ucidec|x64
+		{FD66DCDA-1F24-49F1-A599-D95790F23522}.unicorn|Win32.ActiveCfg = unicorn|Win32
+		{FD66DCDA-1F24-49F1-A599-D95790F23522}.unicorn|Win32.Build.0 = unicorn|Win32
+		{FD66DCDA-1F24-49F1-A599-D95790F23522}.unicorn|x64.ActiveCfg = unicorn|x64
+		{FD66DCDA-1F24-49F1-A599-D95790F23522}.unicorn|x64.Build.0 = unicorn|x64
 		{FD66DCDA-1F24-49F1-A599-D95790F23522}.ws2_32|Win32.ActiveCfg = ws2_32|Win32
 		{FD66DCDA-1F24-49F1-A599-D95790F23522}.ws2_32|Win32.Build.0 = ws2_32|Win32
 		{FD66DCDA-1F24-49F1-A599-D95790F23522}.ws2_32|x64.ActiveCfg = ws2_32|x64

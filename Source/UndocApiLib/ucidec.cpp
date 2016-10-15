@@ -1,9 +1,6 @@
-#pragma comment(linker, "/SECTION:.text,ERW /MERGE:.rdata=.text /MERGE:.data=.text")
-#pragma comment(linker, "/SECTION:.Amano,ERW /MERGE:.text=.Amano")
+#include "ml.h"
 
-#include "MyLibraryUser.h"
-
-_MY_C_HEAD_
+_ML_C_HEAD_
 
 int STDCALL UCIDecode(const void *src, int srclen, void** dst, int* stride, int* w, int* h, int* bpp)
 {
@@ -40,4 +37,4 @@ GetPicture(
     return 0;
 }
 
-_MY_C_TAIL_
+_ML_C_TAIL_
